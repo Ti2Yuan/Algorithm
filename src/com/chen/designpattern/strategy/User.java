@@ -1,4 +1,4 @@
-package com.chen.strategy;
+package com.chen.designpattern.strategy;
 
 public class User {
 
