@@ -1,4 +1,12 @@
 package leetCode;
+
+/**
+ * deep copy object by 2 methods
+ * 
+ * method 1: rewrite clone() of class which implements Cloneable interface.
+ * 
+ * method 2: by stream 
+ */
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -26,6 +34,12 @@ public class DeepCopyOnObject {
 		System.out.println("shallow copy method: "+copy3.toString());
 	}
 
+	/**
+	 * By Stream
+	 * ObjectOutputStream -----> ByteArrayOutputStream ----->ByteArrayInputStream ---->ObjectInputStream
+	 * @param e
+	 * @return
+	 */
 	private static Employee deepCopy(Employee e) {
 		Employee copy = null;
 		try {
