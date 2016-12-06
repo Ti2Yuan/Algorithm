@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 import java.lang.annotation.Target;
 import java.lang.reflect.Array;

@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 import java.util.Scanner;
 import java.util.Vector;

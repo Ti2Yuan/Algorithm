@@ -1,6 +1,6 @@
-package leetCode;
+package leetcode;
 
-import leetCode.MergeKSortedLists.ListNode;
+import leetcode.MergeKSortedLists.ListNode;
 
 public class SwapEveryTwoAdjacentNodes {
 

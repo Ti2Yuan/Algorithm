@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * 验证序列是不是二叉树

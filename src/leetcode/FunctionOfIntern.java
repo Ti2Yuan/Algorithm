@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * 在java程序中，可以调用String类的intern()方法来拘留一个字符串。

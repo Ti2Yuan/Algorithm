@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * deep copy object by 2 methods

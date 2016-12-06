@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * 统计一串字符如"aaaabbc中国1512"中英文字符、数字字符、中文字符的数量

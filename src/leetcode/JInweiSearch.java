@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 public class JInweiSearch {
 
