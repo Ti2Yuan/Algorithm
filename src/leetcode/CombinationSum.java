@@ -56,6 +56,9 @@ public class CombinationSum {
 			return;
 		}
 		for(int i = index;i<candidates.length;i++){
+			//当当前元素已小于target时，不向后遍历，因为数组升序排列
+			if(candidates[i] > target)
+				break;
 			item.add(candidates[i]);
 			helper(candidates, target - candidates[i], i, item, solution);
 			item.remove(item.size()-1);
