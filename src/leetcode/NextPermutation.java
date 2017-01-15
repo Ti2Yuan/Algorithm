@@ -4,18 +4,18 @@
 package leetcode;
 
 /**
- * Next Permutation(ÏÂÒ»¸öÅÅÁĞ) Implement next permutation, which rearranges numbers
- * into the lexicographically(×Öµä) next greater permutation of numbers. If such
+ * Next Permutation(ä¸‹ä¸€ä¸ªæ’åˆ—) Implement next permutation, which rearranges numbers
+ * into the lexicographically(å­—å…¸) next greater permutation of numbers. If such
  * arrangement is not possible, it must rearrange it as the lowest possible
  * order (ie, sorted in ascending order). The replacement must be in-place, do
  * not allocate extra memory. Here are some examples. Inputs are in the
  * left-hand column and its corresponding outputs are in the right-hand column.
- * 1,2,3 ¡ú 1,3,2 
- * 3,2,1 ¡ú 1,2,3 
- * 1,1,5 ¡ú 1,5,1
- * ÊµÏÖnext permutation£¨ÏÂÒ»¸öÅÅÁĞ£©£¬ÖØĞÂÅÅÁĞÊı×éÖĞµÄÊı£¬Ê¹µÃµ½µÄĞÂÊı×éµÄ×ÖµäĞòÇ¡ºÃ´óÓÚÔ­Êı×é¡£
- * Èç¹û²»´æÔÚÕâÑùµÄÅÅÁĞ£¬¾Í½«Ô­Êı×é´ÓĞ¡µ½´óÅÅĞò¡£
- * Ìæ»»±ØĞë¾ÍµØ½øĞĞ£¬²»Òª·ÖÅä¶îÍâµÄÄÚ´æ¡£
+ * 1,2,3 â†’ 1,3,2 
+ * 3,2,1 â†’ 1,2,3 
+ * 1,1,5 â†’ 1,5,1
+ * å®ç°next permutationï¼ˆä¸‹ä¸€ä¸ªæ’åˆ—ï¼‰ï¼Œé‡æ–°æ’åˆ—æ•°ç»„ä¸­çš„æ•°ï¼Œä½¿å¾—åˆ°çš„æ–°æ•°ç»„çš„å­—å…¸åºæ°å¥½å¤§äºåŸæ•°ç»„ã€‚
+ * å¦‚æœä¸å­˜åœ¨è¿™æ ·çš„æ’åˆ—ï¼Œå°±å°†åŸæ•°ç»„ä»å°åˆ°å¤§æ’åºã€‚
+ * æ›¿æ¢å¿…é¡»å°±åœ°è¿›è¡Œï¼Œä¸è¦åˆ†é…é¢å¤–çš„å†…å­˜ã€‚
  */
 public class NextPermutation {
 

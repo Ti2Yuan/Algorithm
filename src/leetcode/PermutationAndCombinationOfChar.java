@@ -5,7 +5,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
- * ×Ö·ûºÍÊý×ÖµÄÅÅÁÐ×éºÏÎÊÌâ
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @author chenti
  *
  */
@@ -14,11 +14,11 @@ public class PermutationAndCombinationOfChar {
 	public static void main(String[] args) {
 		char[] initChars = new char[] { 'a', 'b', 'c'};
 		int from = 0, target = 0;
-//		permutationOfChar(initChars, from);
-//		combinationOfChar(initChars);
+		permutationOfChar(initChars, from);
+		combinationOfChar(initChars);
 		
 		int n=4,k=2;
-		combinationOfIntergers(n,k);
+//		combinationOfIntergers(n,k);
 	}
 
 	/**
