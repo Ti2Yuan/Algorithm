@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/com/chen/designpattern/decorator/package-info.java=GBK
 encoding//src/com/chen/nio/NIOClient.java=GBK
 encoding//src/com/chen/nio/NIOServer.java=UTF-8
 encoding//src/com/chen/offer/Practice39.java=GBK
@@ -7,3 +8,6 @@ encoding//src/com/chen/offer/Practice41.java=GBK
 encoding//src/com/chen/offer/Practice42.java=GBK
 encoding//src/com/chen/offer/Practice43.java=GBK
 encoding//src/leetcode/FilesCopy.java=GBK
+encoding//src/leetcode/TextMerge.java=GBK
+encoding//testData/java/TextMerge.java=GBK
+encoding//testData/java/VerifySquenceOfBST.java=GBK
