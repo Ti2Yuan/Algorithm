@@ -12,6 +12,11 @@ package com.chen.designpattern.singleinstance;
 public enum SingleInstance6 {
 
 	INSTANCE;
+	
+	public void doSomeThing(){
+	    System.out.println("enum singleton");
+	}
+	
 	private String name;
 
 	public String getName() {

@@ -9,10 +9,19 @@ package com.chen.designpattern.adapter;
  * 就好比，我们在给手机充电的时候，我们直接将usb线插进插座里，肯定是不可以的，我们需要将usb线先插入到一个适配器里，
  * 然后适配器插到插座上，我们才可以正常使用。这个概念理解起来还是相对比较简单的。
  * 
+ * 用电器做例子，笔记本电脑的插头一般都是三相的，即除了阳极、阴极外，还有一个地极。而有些地方的电源插座却只有两极，没有地极。
+ * 电源插座与笔记本电脑的电源插头不匹配使得笔记本电脑无法使用。这时候一个三相到两相的转换器（适配器）就能解决此问题，而这正像是本模式所做的事情。
+ * 
+ * jdk中的应用
+ * java.io.InputStreamReader(InputStream) (返回一个Reader)
+ * java.io.OutputStreamWriter(OutputStream) (返回一个Writer)
+ * 
  * 适配器模式的结构 适配器模式有类的适配器模式和对象的适配器模式两种不同的形式。
  * 
  * 类的适配器模式把适配的类的API转换成为目标类的API。(Target.java, Adaptee,java, Adapter.java)
+ * 
  * 与类的适配器模式一样，对象的适配器模式把被适配的类的API转换成为目标类的API，(Target2.java, Adaptee2,java, Adapter2.java) 
+ * 
  * 与类的适配器模式不同的是，对象的适配器模式不是使用继承关系连接到Adaptee类，而是使用委派关系连接到Adaptee类。
  * 
  * 适配器模式的优点 

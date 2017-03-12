@@ -5,8 +5,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
- * �ַ������ֵ������������
- * @author chenti
+ * 字符串的组合和排列 
  *
  */
 public class PermutationAndCombinationOfChar {

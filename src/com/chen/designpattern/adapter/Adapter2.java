@@ -29,7 +29,7 @@ public class Adapter2 {
 	}
 	
 	/**
-	 * 源类Adaptee没有方法sampleOperaion2
+	 * 源类Adaptee没有方法sampleOperaion2，但是想用这个接口
 	 * 因此由适配器类需要补充此方法
 	 * TODO
 	 * void

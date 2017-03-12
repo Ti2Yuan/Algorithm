@@ -1,9 +1,9 @@
-package EventListenerDemo;
+package eventlistenerdemo;
 
 import java.util.EventObject;
 
 /**
- * 事件类，即是事件源的封装
+ * 锟铰硷拷锟洁，锟斤拷锟斤拷锟铰硷拷源锟侥凤拷装
  * @author chenti
  *
  */
@@ -23,7 +23,7 @@ public class MyEventObject extends EventObject {
 	}
 	
 	/**
-	 * 事件处理方法
+	 * 锟铰硷拷锟斤拷锟斤拷锟斤拷
 	 */
 	public void eventHandler(){
 		System.out.println(object);

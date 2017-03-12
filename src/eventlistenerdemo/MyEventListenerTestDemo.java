@@ -1,8 +1,8 @@
-package EventListenerDemo;
+package eventlistenerdemo;
 
 
 /**
- * ¼àÌıÆ÷Ä£Ê½£ºÊÂ¼şÔ´¾­¹ıÊÂ¼şµÄ·â×°´«¸ø¼àÌıÆ÷£¬µ±ÊÂ¼şÔ´´¥·¢ÊÂ¼şºó£¬¼àÌıÆ÷½ÓÊÕµ½ÊÂ¼ş¶ÔÏó¿ÉÒÔ»Øµ÷ÊÂ¼şµÄ·½·¨
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ä·ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ó£¬¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»Øµï¿½ï¿½Â¼ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
  * @author chenti
  *
  */
@@ -13,7 +13,7 @@ public class MyEventListenerTestDemo implements MyEventListener{
 	public MyEventListenerTestDemo() {
 		myEventSource = new MyEventSource();
 		myEventSource.addEventListener(this);
-		System.out.println("¼àÌıÆ÷Ìí¼ÓÍê±Ï");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		try {
 			Thread.sleep(3000);
 			myEventSource.setName("change property,trigge event one");
@@ -22,7 +22,7 @@ public class MyEventListenerTestDemo implements MyEventListener{
 		}
 		
 		myEventSource.addEventListener(this);
-		System.out.println("¼àÌıÆ÷Ìí¼ÓÍê±Ï2");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2");
 		try {
 			Thread.sleep(3000);
 			myEventSource.setName("change property,trigge event two");
@@ -31,7 +31,7 @@ public class MyEventListenerTestDemo implements MyEventListener{
 		}
 		
 		myEventSource.addEventListener(this);
-		System.out.println("¼àÌıÆ÷Ìí¼ÓÍê±Ï3");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3");
 		try {
 			Thread.sleep(3000);
 			myEventSource.setName("change property,trigge event three");

@@ -1,10 +1,10 @@
-package EventListenerDemo;
+package eventlistenerdemo;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * ÊÂ¼şÔ´Àà£¬°üº¬Ò»¸öÊÂ¼ş¼àÌıÆ÷ÁĞ±í£¬ÊÂ¼ş´¥·¢µÄµØ·½
+ * ï¿½Â¼ï¿½Ô´ï¿½à£¬ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµØ·ï¿½
  * @author chenti
  *
  */
@@ -14,17 +14,17 @@ public class MyEventSource {
 	private MyEventListener myEventListener;
     private String name = "";
 	
-	//Ìí¼Ó¼àÌıÆ÷
+	//ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void addEventListener(MyEventListener myEventListener){
 		listenerRepository.addElement(myEventListener);
 	}
 	
-	//É¾³ı¼àÌıÆ÷
+	//É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void removeEventListener(MyEventListener myEventListener){
 		listenerRepository.remove(myEventListener);
 	}
 	
-	//¼¤»î¼àÌıÆ÷
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void notifyEventListener(MyEventObject myEventObject){
 		Enumeration enumeration = listenerRepository.elements();
 		while(enumeration.hasMoreElements()){
@@ -33,7 +33,7 @@ public class MyEventSource {
 		}
 	}
 	
-	//ÉèÖÃÊôĞÔ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void setName (String str){
 		boolean isChanged = false;
 		
