@@ -1,7 +1,7 @@
 /**
  * 
  */
-package leetcode;
+package stringandarray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,6 +28,8 @@ import java.util.Set;
  * 
  * 第二种方法是将两个单词排序，如果排序之后结果相同，就说明两个单词是anagram。
  * 这种方法的时间复杂度取决于排序算法，一般排序算法是O(nlogn)，如果字符集够小，也可以用线性的排序算法。
+ * 
+ * 还有一种方法，设置一个256大小的int数组，设置下标出现的数组值为1
  * 
  * 不过总体来说，如果是判断两个单词的，第一种方法要直接简单一些。
  * 

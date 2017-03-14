@@ -1,4 +1,4 @@
-package leetcode;
+package stringandarray;
 
 import java.util.Arrays;
 
@@ -23,6 +23,14 @@ public class RemoveElements {
 		System.out.println();
 	}
 
+	/**
+	 * 设置两个一头一尾指针，从头扫描，扫描到的话，就将尾部元素拷贝到当前位置
+	 * TODO
+	 * @param nums
+	 * @param value
+	 * @return
+	 * int
+	 */
 	private static int removeElements(int[] nums, int value) {
 		//return -1 if array nums is null or the length is 0
 		if(nums == null || nums.length < 1)
@@ -40,6 +48,14 @@ public class RemoveElements {
 		return last + 1;
 	}
 
+	/**
+	 * 设置两个指针，i,j，当当前元素等于给定元素时，跳过，否则做替换，将给定元素给覆盖了
+	 * TODO
+	 * @param nums
+	 * @param val
+	 * @return
+	 * int
+	 */
 	private static int removeElements2(int[] nums,int val){
 		if(nums == null || nums.length < 1)
 			return 0;
