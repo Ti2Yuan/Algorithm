@@ -1,5 +1,11 @@
 package com.chen.nio;
 
+/**
+ * 在事件应用中，通常会把Server端的监听连接请求的事件和处理请求的事件放在两个线程中：
+ * 一个线程专门负责监听客户端的连接请求，而且是以阻塞方式执行的；
+ * 另一个线程专门负责处理请求，这个专门处理请求的线程才会真正采用NIO的方式，像Web服务器Tomcat和Jetty都使用这个处理方式。
+ */
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
