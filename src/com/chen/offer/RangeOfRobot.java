@@ -25,6 +25,7 @@ public class RangeOfRobot {
 
 	}
 
+	/**循环方式，利用一个数组记录格子是否已被访问过，两个栈存储访问过的格子*/
 	public int movingCount(int threshold, int rows, int cols) {
 		int movingCount = 0;
 		boolean[][] flag = new boolean[rows][cols];
@@ -98,4 +99,41 @@ public class RangeOfRobot {
 		return true;
 	}
 
+	/**递归的方法*/
+	public static int movingCountByRecursively(int threshold, int rows, int cols){
+		boolean[][] flag = new boolean[rows][cols];
+		return helper(0,0,rows,cols,flag,threshold);
+	}
+
+	public static int helper(int i, int j, int rows, int cols, boolean[][] flag, int threshold){
+		if(i<0 || j<0 || i>= rows || j>=cols ||flag[i][j] || 
+				!isAvailable(threshold, i, j)){
+			return 0;
+		}
+		flag[i][j] = true;
+		return helper(i-1, j, rows, cols, flag, threshold)
+				+ helper(i+1, j, rows, cols, flag, threshold)
+				+ helper(i, j-1, rows, cols, flag, threshold)
+				+ helper(i, j+1, rows, cols, flag, threshold)
+				+1;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
