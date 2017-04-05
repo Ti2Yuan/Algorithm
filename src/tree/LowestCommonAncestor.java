@@ -3,6 +3,9 @@
  */
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import tree.ConvertSortedArrayToBinarySearchTree.TreeNode;
 
 /**
@@ -47,6 +50,7 @@ For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3.
 Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 
  * 思路一： 自底向上递归
+ * 思路二：利用栈存储根节点到两个节点的路径，然后把问题转换为两个链表的最后公共结点。
  */
 public class LowestCommonAncestor {
 
@@ -69,7 +73,8 @@ public class LowestCommonAncestor {
 		node3.right = node7;
 		node5.left = node8;
 		node5.right = node9;
-		System.out.println(lowestCommonAncestorOfaBinarySearchTree(node1, node4, node9).val);
+//		System.out.println(lowestCommonAncestorOfaBinarySearchTree(node1, node4, node9).val);
+		System.out.println(getLastCommonParent(node1, node2, node8).val);
 	}
 
 	public static TreeNode findLowestCommonAncestor(TreeNode root, int x ,int y){
@@ -171,4 +176,87 @@ public class LowestCommonAncestor {
 			return root;
 		}*/
 	}
+	
+	
+	/**思路二：利用栈存储根节点到目标节点的路径，转换为求两个链表的最后公共结点*/
+	public static TreeNode getLastCommonParent(TreeNode root, TreeNode p, TreeNode q){
+		if(root == null || p == null || q == null){
+			return null;
+		}
+		List<TreeNode> pathP = new ArrayList<>();
+		List<TreeNode> pathQ = new ArrayList<>();
+		
+		if(!getNodePath(root, p, pathP)){
+			return null;
+		}
+		
+		if(!getNodePath(root, q, pathQ)){
+			return null;
+		}
+		
+		return getLastCommonParent(pathP, pathQ);
+	}
+
+	
+	private static TreeNode getLastCommonParent(List<TreeNode> pathP, List<TreeNode> pathQ) {
+		TreeNode parent = null;
+		int i = 0,j = 0;
+		int lenP = pathP.size();
+		int lenQ = pathQ.size();
+		while(i < lenP && j < lenQ){
+			if(pathP.get(i) == pathQ.get(j)){
+				parent = pathP.get(i);
+			}
+			i++;
+			j++;
+		}
+		return parent;
+	}
+
+	private static boolean getNodePath(TreeNode root, TreeNode p, List<TreeNode> pathP) {
+		if(root == null){
+			return false;
+		}
+		
+		if(root == p){
+			pathP.add(root);
+			return true;
+		}
+		
+		pathP.add(root);
+		if(getNodePath(root.left, p, pathP)){
+			return true;
+		}
+		
+		if(getNodePath(root.right, p, pathP)){
+			return true;
+		}
+		pathP.remove(pathP.size()-1);
+		
+		return false;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

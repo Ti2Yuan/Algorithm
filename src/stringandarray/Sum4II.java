@@ -3,6 +3,9 @@
  */
 package stringandarray;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *4Sum II
  *
@@ -32,7 +35,31 @@ public class Sum4II {
 	public static void main(String[] args) {
 	}
 
+	//A和B一块处理，计算组合的和与出现次数，存入哈希表中，C和D一块处理，计算组合的和，取反，与哈希表对比，取出次数。
 	public static int fourSumCount(int[] A, int[] B, int[] C, int[] D){
-		return 0;
+		if(A == null || B == null || C == null || D == null)
+			return 0;
+		int len = A.length;
+		Map<Integer, Integer> map = new HashMap<>();
+		for(int i = 0; i<len; i++){
+			for(int j = 0; j<len; j++){
+				int sum = A[i] + B[j];
+				if(map.containsKey(sum)){
+					map.put(sum, map.get(sum)+1);
+				}else{
+					map.put(sum, 1);
+				}
+			}
+		}
+		int count = 0;
+		for(int i = 0; i<len; i++){
+			for(int j = 0; j<len; j++){
+				int sum = C[i] + D[j];
+				if(map.containsKey(-sum)){
+					count += map.get(-sum);
+				}
+			}
+		}
+		return count;
 	}
 }

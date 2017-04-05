@@ -3,7 +3,6 @@ package eventlistenerdemo;
 
 /**
  * ������ģʽ���¼�Դ�����¼��ķ�װ���������������¼�Դ�����¼��󣬼��������յ��¼�������Իص��¼��ķ���
- * @author chenti
  *
  */
 public class MyEventListenerTestDemo implements MyEventListener{

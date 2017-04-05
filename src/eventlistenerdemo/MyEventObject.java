@@ -4,7 +4,6 @@ import java.util.EventObject;
 
 /**
  * �¼��࣬�����¼�Դ�ķ�װ
- * @author chenti
  *
  */
 public class MyEventObject extends EventObject {

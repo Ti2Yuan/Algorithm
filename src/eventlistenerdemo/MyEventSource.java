@@ -5,7 +5,6 @@ import java.util.Vector;
 
 /**
  * �¼�Դ�࣬����һ���¼��������б��¼������ĵط�
- * @author chenti
  *
  */
 public class MyEventSource {
