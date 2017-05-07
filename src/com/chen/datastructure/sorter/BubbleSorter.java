@@ -70,7 +70,7 @@ public class BubbleSorter {
 		public <T> void sort(T[] list, Comparator<T> comp) {
 			// TODO Auto-generated method stub
 			boolean swapped = true;
-			for(int i = 0,len = list.length;i<len && swapped;i++){
+			for(int i = 1,len = list.length;i<len && swapped;i++){
 				swapped = false;
 				for(int j = 0;j<len - i;j++){
 					if(comp.compare(list[j], list[j+1]) > 0){

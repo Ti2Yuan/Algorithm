@@ -20,7 +20,7 @@ public class SingleInstance5 {
 
 	/**
 	 * 这种方式同样利用了classloder的机制来保证初始化instance时只有一个线程，这种方式是Singleton类被装载了，instance不一定被初始化。
-	 * 因为Holder类没有被主动使用，只有显示通过调用getInstance方法时，才会显示装载Holder类，从而实例化instance。
+	 * 因为Holder类没有被主动使用，只有显式通过调用getInstance方法时，才会显示装载Holder类，从而实例化instance。
 	 * 并且由于静态内部类只会被加载一次，所以这种写法也是线程安全的
 	 * TODO
 	 * @return

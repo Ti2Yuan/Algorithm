@@ -19,7 +19,7 @@ public class InvocationHandlerImpl implements InvocationHandler {
 
 	/* TODO
 	 * @see java.lang.reflect.InvocationHandler#invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[])
-	 * @param proxy
+	 * @param proxy 代理类实例
 	 * @param method
 	 * @param args
 	 * @return

@@ -43,26 +43,23 @@ public class MergeSorter {
 	private static void merge(int[] data, int start, int mid, int end) {
 		int i = start;
 		int j = mid + 1;
-		int[] copy = new int[end+1];
+		int[] copy = new int[end + 1];
 		int index = start;
 		while (i <= mid && j <= end) {
-			if(data[i] <= data[j]) {
+			if (data[i] <= data[j]) {
 				copy[index++] = data[i++];
-			}
-			else{
+			} else {
 				copy[index++] = data[j++];
 			}
 		}
-		if (i <= mid) {
-			while (i <= mid) {
-				copy[index++] = data[i++];
-			}
+		while (i <= mid) {
+			copy[index++] = data[i++];
 		}
-		if (j <= end) {
-			while (j <= end) {
-				copy[index++] = data[j++];
-			}
+
+		while (j <= end) {
+			copy[index++] = data[j++];
 		}
+		
 		for (int k = start; k <= end; k++) {
 			data[k] = copy[k];
 		}
