@@ -5,8 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.FIELD})   //×¢½âµÄÊ¹ÓÃ·¶Î§  ´Ë´¦Îª±äÁ¿
-//×¢½âµÄÉúÃüÖÜÆÚ  Ö÷ÒªÓĞ3ÖÖ:Ô´´úÂë£¨classÎÄ¼ş²»´æÔÚ£©£¬±àÒëÆÚ£¨classÎÄ¼ş´æÔÚ£©£¬ÔËĞĞÊ±
+@Target({ElementType.FIELD})   //æ³¨è§£çš„ä½¿ç”¨èŒƒå›´  æ­¤å¤„ä¸ºå˜é‡
+//æ³¨è§£çš„ç”Ÿå‘½å‘¨æœŸ  ä¸»è¦æœ‰3ç§:æºä»£ç ï¼ˆclassæ–‡ä»¶ä¸å­˜åœ¨ï¼‰ï¼Œç¼–è¯‘æœŸï¼ˆclassæ–‡ä»¶å­˜åœ¨ï¼‰ï¼Œè¿è¡Œæ—¶
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Column {
 
