@@ -33,8 +33,8 @@ package leetcode;
 public class MaximumSubarray {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-		System.out.println(maxSubArray2(nums));
+		int[] nums = new int[] { -23, 17, -7,11, -2, 1, -34};
+		System.out.println(maxSubArray(nums));
 	}
 
 	//solution 1

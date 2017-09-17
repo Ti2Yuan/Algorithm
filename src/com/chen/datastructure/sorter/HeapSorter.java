@@ -27,9 +27,9 @@ public class HeapSorter {
 		int j = 2*i+1;
 		int temp;
 		while(j <= len){
-			if(j < len && r[j] < r[j+1])
+			if(j < len && r[j] > r[j+1])
 				j++;
-			if(r[i] < r[j]){
+			if(r[i] > r[j]){
 				temp = r[i];
 				r[i] = r[j];
 				r[j] = temp;
