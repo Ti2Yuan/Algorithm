@@ -3,6 +3,8 @@ package leetcode;
 import java.lang.annotation.Target;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * 字符串的组合和排列 
@@ -17,9 +19,10 @@ public class PermutationAndCombinationOfChar {
 	public static void main(String[] args) {
 		char[] initChars = new char[] { 'a', 'b', 'c'};
 		int from = 0, target = 0;
-		permutationOfChar(initChars, from);
-		combinationOfChar(initChars);
-		
+		//permutationOfChar(initChars, from);
+		//combinationOfChar(initChars);
+		permutation(initChars);
+		combination(initChars);
 		int n=4,k=2;
 //		combinationOfIntergers(n,k);
 	}
@@ -93,4 +96,53 @@ public class PermutationAndCombinationOfChar {
 		initChars[target] = temp;
 	}
 
+	/**
+	 * 字符串的排列（分治思想）
+	 * @param t
+	 */
+	public static void permutation(char[] t){
+		if(t == null || t.length == 0){
+			return;
+		}
+		permutation(t, 0, t.length - 1);
+	}
+
+	private static void permutation(char[] t, int start, int end) {
+		if(start > end){
+			System.out.println(Arrays.toString(t));
+		}else{
+			for(int i = start; i <= end; i++){
+				swap(t, start, i);
+				permutation(t, start+1, end);
+				swap(t, i, start);
+			}
+		}
+	}
+
+	/**
+	 * 字符串的组合
+	 * @param t
+	 */
+	private static void combination(char[] t){
+		if(t == null  || t.length == 0){
+			return;
+		}
+		Stack<Character> stack = new Stack<>();
+		for(int i = 1; i<=t.length; ++i){
+			combination(t, 0, i, stack);
+		}
+	}
+
+	private static void combination(char[] t, int start, int m, Stack<Character> stack) {
+		if(m == 0){
+			System.out.println(stack.toString());
+			return;
+		}
+		if(start == t.length)
+			return;
+		stack.push(t[start]);
+		combination(t, start+1, m-1, stack);
+		stack.pop();
+		combination(t, start+1, m, stack);
+	}
 }

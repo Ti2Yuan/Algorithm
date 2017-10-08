@@ -48,7 +48,7 @@ public class Atoi {
 	 * use a boolean as a flag to mark whether it's negative
 	 * return MAX or MIN if it's out of range
 	 * TODO
-	 * @param string
+	 * @param str
 	 * @return
 	 * String
 	 */
